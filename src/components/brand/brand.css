@@ -115,12 +115,13 @@ body {
 
 .filters
 {
-  background-color: #f9d3b4;
+  background-color: rgba(0, 40, 83, 1);
   margin-top: 3.5rem;
   margin-left: 8rem;
 
   max-width:100%;
-  border:1px solid #e8e8e8;
+  max-height: 25rem;
+  border: 1px solid rgba(0, 40, 83, 1);
   -webkit-border-radius:5px;
   border-radius:12px;
   padding:25px;
@@ -154,7 +155,7 @@ hr.solid {
   margin:0 0 16px;
   font-size:13px;
   font-weight:500;
-  color:#1e6cbb;
+  color:#FF4820;
   letter-spacing:1px;
   text-transform:uppercase
 }
@@ -201,7 +202,7 @@ hr.solid {
   font-size:15px;
   font-weight:500;
   line-height:normal;
-  color:#333333;
+  color:#ffffff;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
@@ -212,7 +213,7 @@ hr.solid {
 }
 
 .search-page-form__categories input[type="checkbox"]+label:hover {
-  background-color:#e8f1ff
+  background-color:#677894
 }
 
 .search-page-form__categories input[type="checkbox"]+label::before {
