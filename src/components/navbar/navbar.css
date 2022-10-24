@@ -1,13 +1,9 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2rem 6rem;
 }
 
 .navbar-links {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -22,13 +18,13 @@
 
 .navbar-links_container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .navbar-sign {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
 }
 
 .navbar-links_container p,
@@ -58,6 +54,14 @@
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+.navbar-links_container p:hover,
+.navbar-sign p:hover,
+.navbar-sign button:hover,
+.navbar-menu_container p:hover,
+.navbar-menu_container button:hover {
+    text-decoration:underline;
 }
 
 .navbar-menu {

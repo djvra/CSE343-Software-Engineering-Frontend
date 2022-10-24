@@ -25,8 +25,8 @@ const Navbar = () => {
           <Menu />
         </div>
         <div className='navbar-sign'>
-          <p>Sign in</p>
-          <button type='button'>Sign up</button>
+          <p>Giriş yap</p>
+          <button type='button'>Kayıt ol</button>
         </div>
         <div className='navbar-menu'>
           {toggleMenu
