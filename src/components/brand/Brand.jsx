@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Card from './Card';
-import AllowNumbers from './AllowNumbers';
+import AllowNumbers from '../usefulComponents/AllowNumbers';
+
 import './brand.css';
 
 const profile1 = {
@@ -11,12 +12,12 @@ const profile1 = {
   "poster": "N/A"
 }
 
-const NumericOnly = (e) => {
+/* const NumericOnly = (e) => {
   const reg = /^[0-9\b]+$/
   let preval=e.target.value
   if (e.target.value === '' || reg.test(e.target.value)) return true
   else e.target.value = preval.substring(0,(preval.length-1))
-}
+} */
 
 
 const Brand = () => {
@@ -55,18 +56,28 @@ const Brand = () => {
           <hr className="solid" />
           <h3 className='category-header'>TAKİPÇİLER</h3>
         
-          <div class="numeric-input-holder">
+{/*           <div class="numeric-input-holder">
             <input 
               type="text"
               placeholder="min takipçi sayısı" maxLength={6}
               onChange={NumericOnly}
             />
-          </div>  
+          </div>   */}
+            
+          <div>
+            <AllowNumbers/>
+          </div>
 
         </form>
       </div>
       
       <div className='container'>
+        <Card profile={profile1} />
+        <Card profile={profile1} />
+        <Card profile={profile1} />
+        <Card profile={profile1} />
+        <Card profile={profile1} />
+        <Card profile={profile1} />
         <Card profile={profile1} />
         <Card profile={profile1} />
         <Card profile={profile1} />
